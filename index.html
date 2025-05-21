@@ -3,62 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Modern Portfolio</title>
+  <title>Image-Based Website</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="navbar">
-    <h1 class="logo">DevFolio</h1>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header>
+    <h1>Welcome to Image World</h1>
   </header>
 
-  <section class="hero">
-    <h2>Hey, I'm a Frontend Developer</h2>
-    <p>I build beautiful and functional websites with HTML, CSS, and JavaScript.</p>
-    <a href="#projects" class="btn">See My Work</a>
-  </section>
+  <div class="hero">
+    <img src="https://source.unsplash.com/1600x600/?technology,code" alt="Hero Image">
+    <div class="hero-text">Modern Web Design</div>
+  </div>
 
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>I’m passionate about coding and love to build responsive websites that look great on all devices.</p>
-  </section>
+  <div class="container">
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We build visually appealing, responsive websites with cutting-edge tech.</p>
+      <img src="https://source.unsplash.com/400x300/?team,people" alt="Team Image">
+    </section>
 
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>My personal portfolio built with HTML, CSS, and JavaScript.</p>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service-box">
+          <img src="https://source.unsplash.com/200x150/?design" alt="Design">
+          <h3>Design</h3>
+          <p>Clean, modern UI/UX designs.</p>
+        </div>
+        <div class="service-box">
+          <img src="https://source.unsplash.com/200x150/?code" alt="Code">
+          <h3>Development</h3>
+          <p>Frontend & backend development.</p>
+        </div>
+        <div class="service-box">
+          <img src="https://source.unsplash.com/200x150/?support" alt="Support">
+          <h3>Support</h3>
+          <p>24/7 tech support and updates.</p>
+        </div>
       </div>
-      <div class="project-card">
-        <h3>Landing Page</h3>
-        <p>A clean landing page for a fictional product.</p>
-      </div>
-      <div class="project-card">
-        <h3>ToDo App</h3>
-        <p>A simple to-do list application to manage tasks efficiently.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    </section>
+  </div>
 
   <footer>
-    <p>© 2025 DevFolio. All rights reserved.</p>
+    <p>&copy; 2025 Image World | All Rights Reserved</p>
   </footer>
 </body>
 </html>
