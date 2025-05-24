@@ -1,80 +1,104 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
+body {
   font-family: 'Segoe UI', sans-serif;
-  height: 100%;
-  background-color: #111;
-  color: #fff;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
 }
 
-.hero {
-  background-image: url("images/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  position: relative;
-}
-
-.navbar {
+/* Container */
+.container {
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px;
   align-items: center;
+  padding: 20px;
 }
 
+/* Logo */
 .logo {
-  width: 100px;
+  width: 120px;
 }
 
-.navbar ul {
+/* Navbar */
+nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
-.navbar a {
-  color: #fff;
+nav ul li a {
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
+  color: #333;
+  font-weight: 600;
 }
 
-.navbar a:hover {
-  color: #00d8ff;
-}
-
-.hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') 
+    no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
   text-align: center;
 }
 
-.hero-content h1 {
+.hero .content h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
 }
 
-.hero-content p {
-  font-size: 1.2rem;
+.hero .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Section */
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.btn {
-  background: #00d8ff;
-  color: #000;
-  padding: 10px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
+/* Form */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.btn:hover {
-  background: #00b4d8;
+form button {
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+  margin-top: 40px;
 }
