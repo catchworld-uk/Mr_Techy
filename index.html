@@ -1,72 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mr. Techy Portfolio</title>
-  <link rel="stylesheet" href="code.css" />
-</head>
-<body>
-
-  <!-- Navbar -->
-  <div class="container">
-    <img src="images/logo.png" class="logo" alt="Logo" />
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#">Login</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="content">
-      <h1>I build modern Front-End UI</h1>
-      <p>Mobile Friendly | React | HTML | CSS | JS</p>
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. Techy | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head><body>
+  <header class="header">
+    <div class="container">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Mr. Techy</span></h1>
+      <p>Frontend Developer | Responsive Design | UI/UX Enthusiast</p>
       <a href="#contact" class="btn">Contact Me</a>
     </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services">
-    <h2>My Front-End Services</h2>
-    <div class="services">
-      <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1581092334653-c6a5f92a3e21?w=800&q=80" alt="Web Design">
-        <h3>Web Design</h3>
-        <p>Responsive, clean, and functional websites using latest HTML5 & CSS3.</p>
-      </div>
-      <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=800&q=80" alt="React UI">
-        <h3>React UI</h3>
-        <p>Single Page Applications with React.js and smooth animations.</p>
-      </div>
-      <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1611095773518-8ed9a4a47477?w=800&q=80" alt="Mobile Friendly">
-        <h3>Mobile Friendly</h3>
-        <p>Pixel-perfect mobile first designs for every screen size.</p>
+  </section>  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a passionate frontend developer with experience building responsive websites and web apps using HTML, CSS, JS, and modern frameworks.</p>
+    </div>
+  </section>  <section id="services" class="section dark">
+    <div class="container">
+      <h2>What I Do</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Responsive Websites</h3>
+          <p>Fully responsive designs for mobile & desktop.</p>
+        </div>
+        <div class="card">
+          <h3>UI/UX Design</h3>
+          <p>Clean and modern interfaces that users love.</p>
+        </div>
+        <div class="card">
+          <h3>Web Animations</h3>
+          <p>Subtle animations that enhance user experience.</p>
+        </div>
       </div>
     </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Mr. Techy | Front-End Developer</p>
+  </section>  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <ul class="project-list">
+        <li>Portfolio Website</li>
+        <li>E-commerce Homepage</li>
+        <li>Landing Pages</li>
+      </ul>
+    </div>
+  </section>  <section id="contact" class="section dark">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: mrtechy@example.com</p>
+      <p>Phone: +91-9999999999</p>
+    </div>
+  </section>  <footer>
+    <div class="container">
+      <p>&copy; 2025 Mr. Techy. All rights reserved.</p>
+    </div>
   </footer>
-
 </body>
 </html>
