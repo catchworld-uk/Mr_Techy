@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,152 +10,222 @@
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }body {
-  background-color: #f9f9f9;
-  color: #222;
-}
+    }
 
-header {
-  background-color: #fff;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
+    body {
+      background-color: #f9f9f9;
+      color: #222;
+    }
 
-.logo-title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+    header {
+      background-color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
-.logo-title img {
-  height: 40px;
-}
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-.logo-title span {
-  font-size: 24px;
-  font-weight: bold;
-  color: #222;
-}
+    .logo-title img {
+      height: 40px;
+    }
 
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.3s;
-}
+    .logo-title span {
+      font-size: 24px;
+      font-weight: bold;
+      color: #222;
+    }
 
-nav a:hover {
-  color: #0077cc;
-}
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
 
-section {
-  padding: 60px 20px;
-  text-align: center;
-}
+    nav a:hover {
+      color: #0077cc;
+    }
 
-h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-.about, .contact {
-  background-color: #fff;
-}
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
 
-.projects {
-  background-color: #eaeaea;
-}
+    .about, .contact {
+      background-color: #fff;
+    }
 
-.projects-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
+    .projects {
+      background-color: #eaeaea;
+    }
 
-.project {
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  width: 250px;
-}
+    .projects-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
 
-.project:hover {
-  transform: scale(1.05);
-}
+    .project {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      width: 250px;
+    }
 
-.project img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
+    .project:hover {
+      transform: scale(1.05);
+    }
 
-.project-title {
-  padding: 10px;
-  font-weight: bold;
-  color: #333;
-}
+    .project img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
 
-.contact form {
-  max-width: 400px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
+    .project-title {
+      padding: 10px;
+      font-weight: bold;
+      color: #333;
+    }
 
-.contact input,
-.contact textarea {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
+    .services-container {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 20px;
+      scrollbar-width: thin;
+      scrollbar-color: #888 #ddd;
+    }
 
-.contact button {
-  padding: 12px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+    .services-container::-webkit-scrollbar {
+      height: 8px;
+    }
+    .services-container::-webkit-scrollbar-track {
+      background: #ddd;
+      border-radius: 4px;
+    }
+    .services-container::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
 
-.contact button:hover {
-  background-color: #555;
-}
+    .service-box {
+      background: #fff;
+      min-width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      padding: 20px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
+    .service-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
 
+    .service-img {
+      width: 100%;
+      max-height: 160px;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .service-title {
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      text-align: center;
+      color: #333;
+    }
+
+    .service-desc {
+      font-size: 0.95rem;
+      color: #555;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .contact form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      padding: 12px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
   </style>
 </head>
 <body>
+
   <header>
     <div class="logo-title">
       <img src="images/logo.png" alt="Mr Techy Logo" />
-      <span>Mr Techy</span>
+      <span>Mr_Techy</span>
     </div>
     <nav>
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>  <section class="about" id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm a passionate developer always ready to build something cool.</p>
-  </section>  <section class="projects" id="projects">
+  </header>
+
+  <section class="about" id="about" style="background: url('images/bg.png') center/cover no-repeat; color: white;">
+  <h2>MR_TECHY</h2>
+  <p>Hello! I'm a passionate developer always ready to build something cool.</p>
+  <a href="#contact" style="display: inline-block; margin-top: 20px; padding: 12px 24px; background-color: #0077cc; color: white; border-radius: 5px; text-decoration: none; font-weight: bold;">Hire Me</a>
+</section>
+
+  <section class="projects" id="projects">
     <h2>My Projects</h2>
     <div class="projects-container">
       <a href="https://example.com/project1" class="project" target="_blank">
@@ -171,129 +242,38 @@ footer {
       </a>
     </div>
   </section>
-  <!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Frontend Developer Portfolio</title>
-  <style>
-    /* Reset & base */
-    * {
-      box-sizing: border-box;
-      margin: 0; padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }body {
-  background: #f9f9f9;
-  color: #222;
-  padding: 40px 20px;
-}
 
-h1 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  color: #111;
-}
+  <section class="services" id="services">
+    <h2>Services</h2>
+    <div class="services-container">
+      <div class="service-box">
+        <img class="service-img" src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML5" />
+        <h3 class="service-title">HTML5 Development</h3>
+        <p class="service-desc">Semantic, accessible, and SEO-friendly markup for modern web pages.</p>
+      </div>
+      <div class="service-box">
+        <img class="service-img" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3" />
+        <h3 class="service-title">CSS3 Styling</h3>
+        <p class="service-desc">Responsive and clean styling with animations, flexbox, and grid layouts.</p>
+      </div>
+      <div class="service-box">
+        <img class="service-img" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" />
+        <h3 class="service-title">JavaScript Interactivity</h3>
+        <p class="service-desc">Dynamic UI elements, DOM manipulation, and smooth user experience.</p>
+      </div>
+      <div class="service-box">
+        <img class="service-img" src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React" />
+        <h3 class="service-title">React Development</h3>
+        <p class="service-desc">Building reusable components and SPA with React.js for fast web apps.</p>
+      </div>
+      <div class="service-box">
+        <img class="service-img" src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Responsive" />
+        <h3 class="service-title">Responsive Design</h3>
+        <p class="service-desc">Mobile-first design ensuring perfect display on all devices and screens.</p>
+      </div>
+    </div>
+  </section>
 
-/* Container for horizontal scroll */
-.services-container {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding-bottom: 20px;
-  scrollbar-width: thin;
-  scrollbar-color: #888 #ddd;
-}
-
-/* Scrollbar styling for webkit browsers */
-.services-container::-webkit-scrollbar {
-  height: 8px;
-}
-.services-container::-webkit-scrollbar-track {
-  background: #ddd;
-  border-radius: 4px;
-}
-.services-container::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
-}
-
-/* Each service box */
-.service-box {
-  background: #fff;
-  min-width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
-  padding: 20px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s ease;
-}
-
-.service-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.service-img {
-  width: 100%;
-  max-height: 160px;
-  object-fit: contain;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.service-title {
-  font-weight: 600;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  text-align: center;
-  color: #333;
-}
-
-.service-desc {
-  font-size: 0.95rem;
-  color: #555;
-  text-align: center;
-  line-height: 1.4;
-}
-
-  </style>
-</head>
-<body>  <h1>Frontend Services Portfolio</h1>  <div class="services-container">
-    <div class="service-box">
-      <img class="service-img" src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML5 Logo" />
-      <h2 class="service-title">HTML5 Development</h2>
-      <p class="service-desc">Semantic, accessible, and SEO-friendly markup for modern web pages.</p>
-    </div><div class="service-box">
-  <img class="service-img" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3 Logo" />
-  <h2 class="service-title">CSS3 Styling</h2>
-  <p class="service-desc">Responsive and clean styling with animations, flexbox, and grid layouts.</p>
-</div>
-
-<div class="service-box">
-  <img class="service-img" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript Logo" />
-  <h2 class="service-title">JavaScript Interactivity</h2>
-  <p class="service-desc">Dynamic UI elements, DOM manipulation, and smooth user experience.</p>
-</div>
-
-<div class="service-box">
-  <img class="service-img" src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React Logo" />
-  <h2 class="service-title">React Development</h2>
-  <p class="service-desc">Building reusable components and SPA with React.js for fast web apps.</p>
-</div>
-
-<div class="service-box">
-  <img class="service-img" src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Responsive Design" />
-  <h2 class="service-title">Responsive Design</h2>
-  <p class="service-desc">Mobile-first design ensuring perfect display on all devices and screens.</p>
-</div>
-
-  </div></body>
-</html>
   <section class="contact" id="contact">
     <h2>Contact Me</h2>
     <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
@@ -302,8 +282,11 @@ h1 {
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-  </section>  <footer>
+  </section>
+
+  <footer>
     &copy; 2025 Mr Techy. All Rights Reserved.
   </footer>
+
 </body>
 </html>
